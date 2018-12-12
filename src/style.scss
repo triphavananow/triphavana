@@ -64,6 +64,13 @@
   display: flex;
   align-items: center;
 
+  i{
+    font-size: 4rem;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 30px;
+  }
+
   &.bag1 {
     background-image: url("./../assets/slide1.jpg");
   }
@@ -90,6 +97,12 @@
     font-size: 1.5rem;
     font-weight: 300;
     color: #dc3545;
+    i{
+      font-size: 4rem;
+      vertical-align: middle;
+      display: block;
+      margin: 0 15px;
+    }
   }
   p {
     text-align: center;
