@@ -5,6 +5,8 @@ module.exports = {
     output: {
         filename: "app.bundle.js"//path relative to this file
     },
+    mode: 'development',
+    watch: true,
     plugins: [
         new HtmlWebpackPlugin({
             hash: true,
@@ -13,5 +15,5 @@ module.exports = {
             template: './src/index.html',
             filename: 'index.html' //relative to root of the application
         })
-   ]
+    ]
 }
