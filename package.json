@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "css-loader": "^2.0.0",
+    "firebase": "^5.7.0",
     "handlebars": "^4.0.12",
     "handlebars-loader": "^1.7.0",
     "html-webpack-plugin": "^3.2.0",
