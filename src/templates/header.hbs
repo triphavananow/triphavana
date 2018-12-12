@@ -1,0 +1,40 @@
+<header>
+  <div class="navbar-top">
+    <div class="container">
+      <div class="row">
+        <a class="navbar-brand" href="#">{{title}}</a>
+        <div class="ml-auto">
+          <button type="button" class="btn btn-danger">Get in Touch</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-md navbar-gray">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">{{ htmlWebpackPlugin.options.data.home}} <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          {{#each htmlWebpackPlugin.options.data.services}}
+            <li class="nav-item">
+              <a id="alert" class="nav-link" href="#">{{this.name}}</a>
+            </li>
+          {{/each}}
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          {{#each htmlWebpackPlugin.options.data.toplinks}}
+            <li class="nav-item">
+              <a id="alert" class="nav-link" href="#">{{this.name}}</a>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

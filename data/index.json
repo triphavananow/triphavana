@@ -1,0 +1,23 @@
+{
+    "user": "Aneli Valdes Acosta",
+    "services": [
+        {
+            "id": "#services",
+            "name": "Services"
+        },
+        {
+            "id": "#tours",
+            "name": "Tours"
+        }
+    ],
+    "toplinks": [
+        {
+            "id": "#fb",
+            "name": "Fb"
+        },
+        {
+            "id": "#mail",
+            "name": "triphavananow@gmail.com"
+        }
+    ]
+}

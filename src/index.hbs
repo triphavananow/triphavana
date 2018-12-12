@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      {{htmlWebpackPlugin.options.title }}
+    </title>
+  </head>
+
+  <body>
+    {{> templates/header title='hola' }}
+    <h1>
+      {{htmlWebpackPlugin.options.myPageHeader}}
+    </h1>
+    <h3>Welcome to the Awesome application!: {{htmlWebpackPlugin.options.data.user}}</h3>
+    <a href="services.html">Services</a>
+    <my-app></my-app>
+
+  </body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+    "title": "Los Servicios",
+    "services": [
+        {
+            "id": "#services",
+            "name": "Services"
+        },
+        {
+            "id": "#tours",
+            "name": "Tours"
+        }
+    ],
+    "toplinks": [
+        {
+            "id": "#fb",
+            "name": "Fb"
+        },
+        {
+            "id": "#mail",
+            "name": "triphavananow@gmail.com"
+        }
+    ]
+}
