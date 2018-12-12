@@ -2,14 +2,14 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Awesome application</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
 
   <body>
-    <h1> Hello World </h1>
+    <h1> <%= htmlWebpackPlugin.options.myPageHeader %> </h1>
     <h3>Welcome to the Awesome application</h3>
     
     <my-app></my-app>
 
-  <script type="text/javascript" src="app.bundle.js?70bb1b8ad1f00bc7aa4d"></script></body>
+  </body>
 </html>
