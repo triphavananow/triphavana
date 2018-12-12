@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "webpack-dev-server --open",
     "dev": "webpack --mode development",
     "build": "webpack --mode production"
   },
@@ -13,7 +14,8 @@
     "file-loader": "^2.0.0",
     "html-loader": "^0.5.5",
     "webpack": "4.27.1",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
     "css-loader": "^2.0.0",

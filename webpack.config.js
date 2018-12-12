@@ -9,6 +9,9 @@ module.exports = {
         path: path.resolve(__dirname, './dist'),
         filename: '[name].bundle.js'
     },
+    devServer: {
+        contentBase: './dist'
+    },
     mode: 'development',
     resolve: { extensions: [".js", ".ts"] },
     watch: true,
