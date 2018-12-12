@@ -1,9 +1,13 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-
+var path = require('path');
 module.exports = {
-    entry: "./src/js/app.js",//path relative to this file
+    entry: {
+        app: "./src/js/app.js",
+        services: "./src/js/services.js"
+    },
     output: {
-        filename: "app.bundle.js"//path relative to this file
+        path: path.resolve(__dirname, './dist'),
+        filename: '[name].bundle.js'
     },
     mode: 'development',
     resolve: { extensions: [".js", ".ts"] },
@@ -14,7 +18,16 @@ module.exports = {
             title: 'My Awesome application',
             myPageHeader: 'Hello World',
             template: './src/index.html',
-            filename: 'index.html' //relative to root of the application
+            chunks: ['app'],
+            filename: 'index.html' //will be in dist folder
+        }),
+        new HtmlWebpackPlugin({
+            hash: true,
+            title: 'Services',
+            myPageHeader: 'Hello Services',
+            template: './src/services.html',
+            chunks: ['services'],
+            filename: 'services.html' //will be in dist folder
         })
     ]
 }

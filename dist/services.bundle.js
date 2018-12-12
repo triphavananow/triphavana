@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/services.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -119,18 +119,6 @@ eval("module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\
 
 /***/ }),
 
-/***/ "./src/js/app.js":
-/*!***********************!*\
-  !*** ./src/js/app.js ***!
-  \***********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _my_helper_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./my-helper-module */ \"./src/js/my-helper-module.js\");\n/* harmony import */ var _my_helper_module__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_my_helper_module__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nconsole.log(\"Welcome! Greetings from app.js. Let's learn Webpack4\");\n\nconsole.log(_my_helper_module__WEBPACK_IMPORTED_MODULE_0__[\"greetings\"]);\n\nvar arr=[ 1, 2, 3];\nlodash__WEBPACK_IMPORTED_MODULE_1__[\"each\"](arr,function(val) {\n console.log('Output from Lodash _.each for Element ' + val);\n});\n\n//# sourceURL=webpack:///./src/js/app.js?");
-
-/***/ }),
-
 /***/ "./src/js/my-helper-module.js":
 /*!************************************!*\
   !*** ./src/js/my-helper-module.js ***!
@@ -139,6 +127,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _my_
 /***/ (function(module, exports) {
 
 eval("module.exports = {\n    greetings: 'Hello from my-helper-module!!'\n};\n\n//# sourceURL=webpack:///./src/js/my-helper-module.js?");
+
+/***/ }),
+
+/***/ "./src/js/services.js":
+/*!****************************!*\
+  !*** ./src/js/services.js ***!
+  \****************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _my_helper_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./my-helper-module */ \"./src/js/my-helper-module.js\");\n/* harmony import */ var _my_helper_module__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_my_helper_module__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nconsole.log(\"Welcome! Greetings from services.js. Let's learn Webpack4\");\n\nconsole.log(_my_helper_module__WEBPACK_IMPORTED_MODULE_0__[\"greetings\"]);\n\nvar arr=[ 1, 2, 3];\nlodash__WEBPACK_IMPORTED_MODULE_1__[\"each\"](arr,function(val) {\n console.log('Output from Lodash _.each for Service ' + val); \n});\n\n//# sourceURL=webpack:///./src/js/services.js?");
 
 /***/ })
 
