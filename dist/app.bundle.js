@@ -90,10 +90,22 @@
 /*!***********************!*\
   !*** ./src/js/app.js ***!
   \***********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _my_helper_module_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./my-helper-module.js */ \"./src/js/my-helper-module.js\");\n/* harmony import */ var _my_helper_module_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_my_helper_module_js__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconsole.log(\"Welcome! Greetings from app.js. Let's learn Webpack2\");\n\nconsole.log(_my_helper_module_js__WEBPACK_IMPORTED_MODULE_0__[\"greetings\"]);\n\n//# sourceURL=webpack:///./src/js/app.js?");
+
+/***/ }),
+
+/***/ "./src/js/my-helper-module.js":
+/*!************************************!*\
+  !*** ./src/js/my-helper-module.js ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log('Welcome from app.js Audrey');\n\n//# sourceURL=webpack:///./src/js/app.js?");
+eval("module.exports = {\n    greetings: 'Hello from my-helper-module!!'\n};\n\n//# sourceURL=webpack:///./src/js/my-helper-module.js?");
 
 /***/ })
 
