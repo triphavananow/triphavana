@@ -1,3 +1,4 @@
+import '../style.scss';
 import * as helperModule from './my-helper-module'
 import * as _ from 'lodash';
 

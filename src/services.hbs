@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <h1> {{htmlWebpackPlugin.options.data.title}} </h1>
+    {{> templates/header data=htmlWebpackPlugin.options.data }}
     <h3>Welcome to Services!<i class="material-icons">face</i></h3>
     <a href="index.html">Index</a>
     {{#each htmlWebpackPlugin.options.data.services}}

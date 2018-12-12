@@ -2,7 +2,7 @@
     "user": "Aneli Valdes Acosta",
     "services": [
         {
-            "id": "#services",
+            "href": "services.html",
             "name": "Services"
         },
         {
@@ -12,12 +12,10 @@
     ],
     "toplinks": [
         {
-            "id": "#fb",
-            "name": "Fb"
+            "name": "contacts"
         },
         {
-            "id": "#mail",
-            "name": "triphavananow@gmail.com"
+            "name": "email"
         }
     ]
 }

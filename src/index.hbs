@@ -15,13 +15,35 @@
   </head>
 
   <body>
-    {{> templates/header title='hola' }}
-    <h1>
-      {{htmlWebpackPlugin.options.myPageHeader}}
-    </h1>
-    <h3>Welcome!!!!!!!! to the Awesome application!: {{htmlWebpackPlugin.options.data.user}}</h3>
-    <a href="services.html">Services</a>
-    <my-app></my-app>
+    {{> templates/header data=htmlWebpackPlugin.options.data }}
+    <main role="main">
+      {{> templates/welcome }}
+      <div class="divider bag1"></div>
+      {{> templates/services }}
+      <div class="divider bag2">
+        <h1>General Tours and Specialized Tours</h1>
+      </div>
+      <div class="container">
+        {{> templates/tourhome }}
+        {{> templates/tourhomeleft }}
+
+      </div>
+      <!--
+        Marketing messaging and featurettes
+        ==================================================
+      -->
+      <!--
+        Wrap the rest of the page in another container to center all the content.
+      -->
+
+      <div class="container marketing">
+
+      </div>
+      <!-- /.container -->
+
+      <!-- FOOTER -->
+
+    </main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

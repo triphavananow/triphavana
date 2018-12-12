@@ -1,0 +1,115 @@
+
+
+// Your customize CSS
+.navbar-gray {
+  background: #dc3545;
+}
+.navbar-top {
+  padding: 2rem 0;
+}
+.btn {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  border-radius: 0rem;
+}
+.nav-link {
+  font-size: 0.9rem;
+  color: white;
+  &:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+.navbar-brand {
+  margin-left: 1rem;
+  color: #dc3545;
+  font-weight: bolder;
+}
+
+.carousel-item > img {
+  height: auto;
+}
+
+.welcome {
+  text-align: center;
+  margin: 3rem 0 0 0;
+  h1 {
+    font-size: 3rem;
+    color: #dc3545;
+    margin: 0 0 2rem;
+    font-weight: 100;
+  }
+  p {
+    margin-top: 0;
+    width: 80%;
+    margin: auto;
+    font-weight: 200;
+    text-align: justify;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+
+  img {
+    width: 80%;
+  }
+}
+.divider {
+  background: gray;
+  width: 100%;
+  height: 200px;
+  margin: 1.5rem 0 3rem 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  align-items: center;
+
+  &.bag1 {
+    background-image: url("./../assets/slide1.jpg");
+  }
+
+  &.bag2 {
+    background: #dc3545;
+  }
+  h1 {
+    margin: auto;
+    color: white;
+    font-weight: 200;
+    font-size: 2rem;
+  }
+}
+.service {
+  .img-container {
+    width: 100%;
+    height: 395px;
+    background-image: url("/../../public/service1.jpg");
+  }
+  h2 {
+    margin: 3rem auto;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #dc3545;
+  }
+  p {
+    text-align: center;
+    font-weight: 100;
+    line-height: 1.8rem;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+}
+.tour {
+  img {
+    height: 400px;
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #dc3545;
+    margin: 3rem 0;
+  }
+}

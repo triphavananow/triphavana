@@ -21,6 +21,16 @@ module.exports = {
                     knownHelpersOnly: false,
                     helperDirs: [path.join(__dirname, 'hbs-helpers')],
                 },
+            },
+            {
+                test: /\.scss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                    'file-loader'
+                ]
             }
         ]
     },
