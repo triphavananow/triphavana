@@ -6,6 +6,7 @@ module.exports = {
         filename: "app.bundle.js"//path relative to this file
     },
     mode: 'development',
+    resolve: { extensions: [".js", ".ts"] },
     watch: true,
     plugins: [
         new HtmlWebpackPlugin({
