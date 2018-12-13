@@ -43,7 +43,7 @@ module.exports = {
             title: 'My Awesome application',
             myPageHeader: 'Hello World',
             template: './src/index.hbs',
-            data: require('./data/index.json'),
+            data: { header: require('./data/header.json') },
             chunks: ['app'],
             filename: 'index.html' //will be in dist folder
         }),
@@ -52,7 +52,7 @@ module.exports = {
             title: 'Services',
             myPageHeader: 'Hello Services',
             template: './src/services.hbs',
-            data: require('./data/services.json'),
+            data: { header: require('./data/header.json') },
             chunks: ['services'],
             filename: 'services.html' //will be in dist folder
         })

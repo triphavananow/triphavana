@@ -1,5 +1,3 @@
-
-
 // Your customize CSS
 .navbar-gray {
   background: #dc3545;
@@ -15,6 +13,7 @@
 .nav-link {
   font-size: 0.9rem;
   color: white;
+  text-transform: uppercase;
   &:hover {
     color: white;
     text-decoration: underline;
@@ -64,7 +63,7 @@
   display: flex;
   align-items: center;
 
-  i{
+  i {
     font-size: 4rem;
     vertical-align: middle;
     display: inline-block;
@@ -97,7 +96,7 @@
     font-size: 1.5rem;
     font-weight: 300;
     color: #dc3545;
-    i{
+    i {
       font-size: 4rem;
       vertical-align: middle;
       display: block;
@@ -125,4 +124,112 @@
     color: #dc3545;
     margin: 3rem 0;
   }
+}
+.tour-section {
+  text-align: center;
+  padding: 1rem;
+  background: #d3d3d342;
+  border-radius: 1.5rem;
+  h1 {
+    font-size: 1.5rem;
+    color: #e03c4f;
+    margin: 2rem;
+    border-bottom: solid 1px;
+    padding-bottom: 1.5rem;
+    span {
+      font-size: 0.6em;
+      font-weight: 400;
+      color: gray;
+      display: block;
+      font-style: italic;
+    }
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      font-weight: 100;
+      margin-bottom: 1rem;
+    }
+  }
+}
+footer {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background: #d3d3d342;
+  margin-top: 4rem;
+
+  p {
+    margin: auto;
+    color: gray;
+  }
+}
+.first-box {
+  padding: 10px;
+  background: #9c0;
+}
+.second-box {
+  padding: 10px;
+  background: #39f;
+}
+.third-box {
+  padding: 10px;
+  background: #f66;
+}
+.fourth-box {
+  padding: 10px;
+  background: #6cc;
+}
+.contact-bar {
+  margin-top: 4rem;
+  color: white;
+  span.material-icons {
+    font-size: 3rem;
+    display: block;
+    margin-top: 1rem;
+  }
+}
+.faqHeader {
+  font-size: 27px;
+  margin: 20px;
+}
+
+.panel-heading [data-toggle="collapse"]:after {
+  font-family: 'FontAwesome';
+  content: "\f078"; /* "play" icon */
+  float: right;
+  color: #F58723;
+  font-size: 18px;
+  line-height: 22px;
+  /* rotate "play" icon from > (right arrow) to down arrow */
+/*    -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg); */
+}
+
+.panel-heading [data-toggle="collapse"].collapsed:after {
+  /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+/*    -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg); */
+  color: #454444;
+}
+
+.faq_num {
+  background: #007715;
+  text-align: center;
+  width: 50px;
+  padding: 10px 0px;
+  color: #FFFFFF;
+  font-size: 32px;
+  float: left;
+}
+.faq_question{
+margin-top: 0px;    
 }

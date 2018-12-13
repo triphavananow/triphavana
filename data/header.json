@@ -1,6 +1,5 @@
 {
-    "user": "Aneli Valdes Acosta",
-    "services": [
+    "headerLinks": [
         {
             "href": "index.html",
             "name": "Inicio"
@@ -16,14 +15,6 @@
         {
             "id": "faq.html",
             "name": "FAQ"
-        }
-    ],
-    "toplinks": [
-        {
-            "name": "contacts"
-        },
-        {
-            "name": "email"
         }
     ]
 }

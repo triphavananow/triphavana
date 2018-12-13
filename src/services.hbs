@@ -1,48 +1,80 @@
 <!doctype html>
 <html lang="en">
-
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <title>Inicio</title>
-  </head>
+  {{> templates/head title='Services'}}
 
   <body>
-    {{> templates/header data=htmlWebpackPlugin.options.data }}
-    <h3>Welcome to Services!<i class="material-icons">face</i></h3>
-    <a href="index.html">Index</a>
-    {{#each htmlWebpackPlugin.options.data.services}}
-      <li class="nav-item">
-        <a id="alert" class="nav-link" href="#">{{this.name}}</a>
-      </li>
-    {{/each}}
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Dropdown button
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
+    {{> templates/header data=htmlWebpackPlugin.options.data.header }}
+    <div class="container">
+      <div class="row flex-items-xs-middle flex-items-xs-center">
+
+        <!-- Table #1  -->
+        <div class="col-xs-12 col-lg-4">
+          <div class="card text-xs-center">
+            <div class="card-header">
+              <h3 class="display-2"><span class="currency">$</span>19<span class="period">/month</span></h3>
+            </div>
+            <div class="card-block">
+              <h4 class="card-title">
+                Basic Plan
+              </h4>
+              <ul class="list-group">
+                <li class="list-group-item">Ultimate Features</li>
+                <li class="list-group-item">Responsive Ready</li>
+                <li class="list-group-item">Visual Composer Included</li>
+                <li class="list-group-item">24/7 Support System</li>
+              </ul>
+              <a href="#" class="btn btn-gradient mt-2">Choose Plan</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table #1  -->
+        <div class="col-xs-12 col-lg-4">
+          <div class="card text-xs-center">
+            <div class="card-header">
+              <h3 class="display-2"><span class="currency">$</span>29<span class="period">/month</span></h3>
+            </div>
+            <div class="card-block">
+              <h4 class="card-title">
+                Regular Plan
+              </h4>
+              <ul class="list-group">
+                <li class="list-group-item">Ultimate Features</li>
+                <li class="list-group-item">Responsive Ready</li>
+                <li class="list-group-item">Visual Composer Included</li>
+                <li class="list-group-item">24/7 Support System</li>
+              </ul>
+              <a href="#" class="btn btn-gradient mt-2">Choose Plan</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table #1  -->
+        <div class="col-xs-12 col-lg-4">
+          <div class="card text-xs-center">
+            <div class="card-header">
+              <h3 class="display-2"><span class="currency">$</span>39<span class="period">/month</span></h3>
+            </div>
+            <div class="card-block">
+              <h4 class="card-title">
+                Premium Plan
+              </h4>
+              <ul class="list-group">
+                <li class="list-group-item">Ultimate Features</li>
+                <li class="list-group-item">Responsive Ready</li>
+                <li class="list-group-item">Visual Composer Included</li>
+                <li class="list-group-item">24/7 Support System</li>
+              </ul>
+              <a href="#" class="btn btn-gradient mt-2">Choose Plan</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-    <my-app></my-app>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
+
+    {{> templates/scripts}}
+
   </body>
 
 </html>
