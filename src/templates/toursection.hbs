@@ -2,10 +2,14 @@
     <div class="row">
         <div class="col-sm-6">
             <div class="tour-section">
-                <h1>in Havana<span>General and Specialized Tours </span></h1>
+                <h1>in Havana<span>General Tours </span></h1>
                 <ul>
-                    <li>Old Havana Walking Tour</li>
-                    <li>Havana City Tour (Old Havana and Modern Havana Area)</li>
+                    {{#each data.tours_list.general}}
+                        <li>
+                            <a href="{{this.marker}}">{{this.name}}</a>
+                        </li>
+                    {{/each}}
+
                 </ul>
             </div>
         </div>
@@ -15,9 +19,25 @@
                     <span>Day Trips</span>
                 </h1>
                 <ul>
-                    <li>Viñales Tour</li>
-                    <li>Havana City Tour (Old Havana and Modern Havana Area)</li>
-                </ul>
+                    {{#each data.tours_list.outside}}
+                        <li>
+                            <a href="{{this.marker}}">{{this.name}}</a>
+                        </li>
+                    {{/each}} </ul>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="tour-section">
+                <h1>Specialized Tours 
+                    <span>Your tour guide will be specialized on the subject</span>
+                </h1>
+                <ul>
+                    {{#each data.tours_list.specialized}}
+                        <li>
+                            <a href="{{this.marker}}">{{this.name}}</a>
+                        </li>
+                    {{/each}}
+                    </ul>
             </div>
         </div>
     </div>

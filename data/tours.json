@@ -1,0 +1,62 @@
+{
+    "tours_list": {
+        "general": [
+            {
+                "name": "Old Havana Walking Tour",
+                "marker": "#oldhavana"
+            },
+            {
+                "name": "Havana City Tour (Old Havana and Modern Havana Area)",
+                "marker": "#havanacity"
+            },
+            {
+                "name": "Habano and Rum Tour",
+                "marker": "#havanorum"
+            },
+            {
+                "name": "Hemingway Tour in a classic American car",
+                "marker": "#heminwaytour"
+            },
+            {
+                "name": "Revolution Tour",
+                "marker": "#revolution"
+            }
+        ],
+        "specialized": [
+            {
+                "name": "Art Tour",
+                "marker": "#art"
+            },
+            {
+                "name": "Religion Tour",
+                "marker": "#religion"
+            },
+            {
+                "name": "Architecture Tour",
+                "marker": "#architecture"
+            },
+            {
+                "name": "Diving and Snorkeling",
+                "marker": "#architecture"
+            }
+        ],
+        "outside": [
+            {
+                "name": "Viñales Tour",
+                "marker": "#vinales"
+            },
+            {
+                "name": "Playa Giron Tour",
+                "marker": "#giron"
+            },
+            {
+                "name": "Matanzas Tour",
+                "marker": "#matanzas"
+            },
+            {
+                "name": "Circuits",
+                "marker": "#circuits"
+            }
+        ]
+    }
+}

@@ -128,7 +128,7 @@
 .tour-section {
   text-align: center;
   padding: 1rem;
-  background: #d3d3d342;
+  //background: #d3d3d342;
   border-radius: 1.5rem;
   h1 {
     font-size: 1.5rem;
@@ -151,6 +151,9 @@
     li {
       font-weight: 100;
       margin-bottom: 1rem;
+      a{
+        cursor: pointer;
+      }
     }
   }
 }
@@ -233,3 +236,4 @@ footer {
 .faq_question{
 margin-top: 0px;    
 }
+

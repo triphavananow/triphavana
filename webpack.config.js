@@ -3,7 +3,9 @@ var path = require('path');
 module.exports = {
     entry: {
         app: "./src/js/app.js",
-        services: "./src/js/services.js"
+        transportation: "./src/js/transportation.js",
+        acomodation: "./src/js/acomodation.js"
+
     },
     output: {
         path: path.resolve(__dirname, './dist'),
@@ -43,18 +45,27 @@ module.exports = {
             title: 'My Awesome application',
             myPageHeader: 'Hello World',
             template: './src/index.hbs',
-            data: { header: require('./data/header.json') },
+            data: { header: require('./data/header.json'), tours: require('./data/tours.json') },
             chunks: ['app'],
             filename: 'index.html' //will be in dist folder
         }),
         new HtmlWebpackPlugin({
             hash: true,
-            title: 'Services',
+            title: 'Transportation',
             myPageHeader: 'Hello Services',
-            template: './src/services.hbs',
+            template: './src/transportation.hbs',
             data: { header: require('./data/header.json') },
-            chunks: ['services'],
-            filename: 'services.html' //will be in dist folder
+            chunks: ['transportation'],
+            filename: 'transportation.html' //will be in dist folder
+        }),
+        new HtmlWebpackPlugin({
+            hash: true,
+            title: 'Acomodations',
+            myPageHeader: 'Hello Services',
+            template: './src/acomodation.hbs',
+            data: { header: require('./data/header.json') },
+            chunks: ['acomodation'],
+            filename: 'acomodation.html' //will be in dist folder
         })
     ]
 }
